@@ -9,7 +9,9 @@ use anchor_lang::prelude::*;
 
 use super::WhirlpoolsConfig;
 
+// #[account]
 #[account]
+#[repr(C)]
 #[derive(Default)]
 pub struct Whirlpool {
     pub whirlpools_config: Pubkey, // 32
